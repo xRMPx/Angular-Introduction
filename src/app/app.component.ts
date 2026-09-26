@@ -1,22 +1,21 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   standalone: true,
   selector: 'app-root',
   template: `
     <main>
-      <header class="brand-name">
-        <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true"/>
-      </header>
+      <app-navbar/>
       <section class="content">
         <router-outlet></router-outlet>
       </section>
     </main>
   `,
   styleUrls: ['./app.component.css'],
-  imports: [HomeComponent, RouterModule]
+  imports: [HomeComponent, RouterModule, NavbarComponent]
 })
 export class AppComponent {
   title = 'Ryan Petrillo';

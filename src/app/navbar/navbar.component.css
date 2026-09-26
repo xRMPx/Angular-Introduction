@@ -1,0 +1,28 @@
+.nav-options {
+  display: flex;
+  background-color: rgb(89, 66, 109);
+  font: calibri, sans-serif;
+  /* Uncomment to uppercase the text */
+  /* text-transform: uppercase; */
+  color: white;
+}
+
+.nav-option {
+  background-color: rgb(120, 90, 146);
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none; /* Removes the bullet markers */
+  padding: 0;            /* Removes default left indentation */
+  margin: 0;             /* Removes default spacing */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
